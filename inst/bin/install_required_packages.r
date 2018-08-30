@@ -12,8 +12,9 @@ if(any(!.inst)) {
 
 .inst <- .bioc_packages %in% installed.packages()
 if(any(!.inst)) {
-  source("http://bioconductor.org/biocLite.R")
-  biocLite(.bioc_packages[!.inst], ask = F)
+  if (!requireNamespace("BiocManager", quietly=TRUE))
+      install.packages("BiocManager")
+  BiocManager::install(.bioc_packages[!.inst], ask = F)
 }
 
 # Load packages into session, and print package version
