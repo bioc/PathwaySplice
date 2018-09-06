@@ -48,8 +48,9 @@ Pathway analysis without explicit adjustment can be biased toward pathways that 
 
 After installing the `PathwaySplice` package, load the package namespace via:
 ```{r eval=TRUE, message=FALSE, warning=FALSE, results='hide'}
-# source("https://bioconductor.org/biocLite.R")
-# biocLite("PathwaySplice")
+# if (!requireNamespace("BiocManager", quietly=TRUE))
+    # install.packages("BiocManager")
+# BiocManager::install("PathwaySplice")
 library(PathwaySplice)
 ```
 
