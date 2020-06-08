@@ -1,7 +1,7 @@
 Package: PathwaySplice
 Type: Package
 Title: An R Package for Unbiased Splicing Pathway Analysis 
-Version: 1.13.0
+Version: 1.13.1
 Author: Aimin Yan, Xi Chen, Lily Wang
 Maintainer: Aimin Yan <aimin.at.work@gmail.com>
 Depends: R (>= 3.5.0)
@@ -31,3 +31,4 @@ Description: Pathway analysis of alternative splicing would be biased without ac
 License: LGPL(>=2)
 LazyData: TRUE
 RoxygenNote: 6.0.1
+PackageStatus: Deprecated
